@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>โปรแกรมคำนวนหน่วยการใช้ไฟฟ้า</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+
+<body>
+    <div class="topnav">
+        <a class="active" onclick="openNav()" href="#home"> &#9776;</a>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="main">
+        <div>
+            <h1>โปรแกรมคำนวนหน่วยการใช้ไฟฟ้า</h1>
+            <div>
+                <h4>สูตรการคำนวนจำนวนหน่วยการใช้งานไฟฟ้า</h4>
+                <bd> &nbsp;&nbsp;&nbsp; หน่วยการใช้ไฟฟ้า จะปรากฎอยู่ในมิเตอร์ไฟฟ้าในแต่ละบ้าน ซึ่งตัวมิเตอร์ไฟฟ้าจะหมุนทำงานเมื่อมีการใช้งานไฟฟ้า ซึ่งจำนวนหน่วยจะมีวิธีคำนวนจาก กำลังไฟ และระยะเวลาที่ใช้งาน ซึ่งสูตรคำนวนจะมีดังนี้ </bd><br><br>
+                <div class="center_text">
+                    <fm class=> กำลังใช้ไฟฟ้า (W) X จำนวนเครื่องใช้ไฟฟ้า (คิดแยกตามชนิด) / 1000 X จำนวนชั่วโมงที่ใช้ใน 1 วัน = หน่วยต่อวัน (Unit)</fm>
+                </div>
+            </div>
+            <div>
+                <h3>จำนวนเครื่องใช้ไฟฟ้าทั้งหมด</h3>
+                <input class="" id="count_input" type="number" placeholder="ใส่จำนวนเครื่องใช้ไฟฟ้า" min="0" />
+                <button type="submit" onclick="update_input_Form()">ตกลง</button><br><br>
+
+                <form>
+                    <div id="head_input"></div>
+                    <div id="inputs_eletor"></div>
+                </form>
+                <div class="center_text">
+                    <bt id="test"></bt>
+                </div>
+            </div>
+        </div>
+        <div>
+            <form>
+                <div id="outputs_eletor" class="center_text"></div>
+            </form>
+            <p>ใช้ไฟไปทั้งหมด
+                <pp id="result">0</pp>
+                หน่วย/วัน
+            </p>
+
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>

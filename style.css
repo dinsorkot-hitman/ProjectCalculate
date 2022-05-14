@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit&subset=thai,latin');
+body {
+    border-width: 10px 200px;
+    font-family: 'Kanit', sans-serif;
+    background: white;
+    color: rgb(33, 33, 33);
+}
+
+.main {
+    max-width: 560px;
+    margin: auto;
+    /* Same as the width of the sidenav */
+    font-size: 14px;
+    /* Increased text to enable scrolling */
+    padding: 50px 10px;
+}
+
+input {
+    width: 18%;
+    margin: auto;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    text-overflow: 2em;
+}
+
+.center_text {
+    text-align: center;
+}
+
+
+/* Add a black background color to the top navigation */
+
+.topnav {
+    width: 200px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.topnav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
